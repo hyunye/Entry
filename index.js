@@ -25,4 +25,4 @@ setTimeout(() => {
 
 setTimeout(() => {
     alert("넌 조졌다 ㅋㅋㅋ")
-}, 1500)
+}, 2500)
