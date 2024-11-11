@@ -1,4 +1,4 @@
-var project = Entry.exportProject()
+project = Entry.exportProject()
 
 for (let i of project.variables) {
     i.name = ""
@@ -56,9 +56,16 @@ setTimeout(() => {
     document.querySelector(".item__p5HkM").click()
 }, 100)
 
-let alerting = setInterval(() => {
+function texts(string) {
+    return decodeURIComponent(escape(atob(string)))
+}
+
+alerting = setInterval(() => {
     if (document.querySelector(".entry-modal-confirm")) {
-        alert(decodeURIComponent(escape(atob("7Jes67Cx7J2YIOuvuCDsoovslYTtlZjsi5zrgpjsmpQ/IDop"))))
+        document.querySelector(".entry-modal-entryLmsText").textContent = texts("7J2RIOyggOyepe2VqCDjhYXjhLE=")
+        document.querySelector(".entry-modal-content").textContent = texts("7Jes67Cx7J2YIOuvuCDsoovslYTtlZjsi5zrgpjsmpQgOikKKOy9mOyGlOufrOuPhCDrp4nqs6Ag7J206rGwIOyZhOyghCDrn6ztgqTruYTtgqTsnpDrgpghISk=")
+        document.querySelector(".entry-modal-button.entry-modal-button.entry-modal-cancelButton").remove()
+        document.querySelectorAll(".entry-modal-button")[1].textContent = "받아들이셈"
         clearInterval(alerting)
     }
 }, 100)
