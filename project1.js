@@ -23,6 +23,9 @@ setTimeout(() => {
     document.querySelector(".item__p5HkM").click()
 }, 100)
 
-setTimeout(() => {
-    alert("넌 조졌다 ㅋㅋㅋ")
-}, 2500)
+alerting = setInterval(() => {
+    if (document.querySelector(".entry-modal-confirm")) {
+        alert(decodeURIComponent(escape(atob("7J20IOyekeydmCDrs4DsiJgg7J2066aE7J2EIOuwlOq/lOuGqOyKteuLiOuLpC4K7KCcIOyVjOu5oOuKlCDslYTri4jqs6AsIOyXlOydtOyXkCDqsJnsnbQg7L2U65Oc66W8IOu/jOugpOuztOyjoA=="))))
+        clearInterval(alerting)
+    }
+}, 100)
