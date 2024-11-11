@@ -1,4 +1,4 @@
-project = Entry.exportProject()
+var project = Entry.exportProject()
 
 for (let i of project.variables) {
     i.name = ""
@@ -65,7 +65,7 @@ alerting = setInterval(() => {
         document.querySelector(".entry-modal-entryLmsText").textContent = texts("7J2RIOyggOyepe2VqCDjhYXjhLE=")
         document.querySelector(".entry-modal-content").textContent = texts("7Jes67Cx7J2YIOuvuCDsoovslYTtlZjsi5zrgpjsmpQgOikKKOy9mOyGlOufrOuPhCDrp4nqs6Ag7J206rGwIOyZhOyghCDrn6ztgqTruYTtgqTsnpDrgpghISk=")
         document.querySelector(".entry-modal-button.entry-modal-button.entry-modal-cancelButton").remove()
-        document.querySelectorAll(".entry-modal-button")[1].textContent = "받아들이셈"
+        document.querySelectorAll(".entry-modal-button")[1].textContent = "받아들이셈ㅋ"
         clearInterval(alerting)
     }
 }, 100)
