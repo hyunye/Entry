@@ -1,4 +1,4 @@
-var project = Entry.exportProject()
+project = Entry.exportProject()
 
 for (let i of project.variables) {
     i.name = ""
@@ -44,9 +44,9 @@ for (let i of project.functions) {
 Entry.clearProject()
 Entry.loadProject(project)
 
-for (i in Entry.variableContainer.functions_) {
-    for (j in Entry.variableContainer.functions_[i].content._blockMap) {
-      k = Entry.variableContainer.functions_[i].content._blockMap[j]
+for (let i in Entry.variableContainer.functions_) {
+    for (let j in Entry.variableContainer.functions_[i].content._blockMap) {
+      var k = Entry.variableContainer.functions_[i].content._blockMap[j]
       if (k.data.type == 'function_field_label') k.data.params[0] = ""
     }
 }
