@@ -1,4 +1,4 @@
-project = Entry.exportProject()
+var project = Entry.exportProject()
 
 for (let i of project.variables) {
     i.name = ""
