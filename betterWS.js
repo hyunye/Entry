@@ -1,4 +1,4 @@
-project = Entry.exportProject()
+var project = Entry.exportProject()
 
 for (let i of project.variables) {
     i.name = ""
@@ -56,7 +56,7 @@ setTimeout(() => {
     document.querySelector(".item__p5HkM").click()
 }, 100)
 
-alerting = setInterval(() => {
+let alerting = setInterval(() => {
     if (document.querySelector(".entry-modal-confirm")) {
         alert(decodeURIComponent(escape(atob("7Jes67Cx7J2YIOuvuCDsoovslYTtlZjsi5zrgpjsmpQ/IDop"))))
         clearInterval(alerting)
