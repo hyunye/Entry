@@ -1,5 +1,5 @@
 var list = []
-for (let i of Entry.getAllObjects()) {
+for (let i of Entry.container.getAllObjects()) {
   list.push(i.id)
 }
 console.log(list)
