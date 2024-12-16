@@ -1,0 +1,5 @@
+var list = []
+for (let i of Entry.container.getBlockList()) {
+  list.push(i.data.id)
+}
+console.log(list)
