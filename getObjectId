@@ -1,5 +1,4 @@
-let list = []
-
+var list = []
 for (let i of Entry.getAllObjects()) {
   list.push(i.id)
 }
